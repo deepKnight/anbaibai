@@ -5,6 +5,7 @@ class Article(models.Model):
     block = models.ForeignKey(Block, verbose_name = "所属版块")
     title = models.CharField("文章名称", max_length=100)
     content = models.CharField("文章内容", max_length=10000)
+    headImg = models.ImageField(upload_to='')
 
     status = models.IntegerField("状态", choices= ((0,"正常"), (-1,"删除")), default = 0)
 
