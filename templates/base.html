@@ -9,7 +9,7 @@
         <script type="text/javascript" src="https://ogmcsrgk5.qnssl.com/pythoncircle/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default">
+
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -19,44 +19,32 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                  <a class="navbar-brand" href="#">
-                    <img alt="Brand" width="80" height="20" src="/static/picture/brand_anbaibai.jpg">
+                  <a class="navbar-brand" href="/">
+                    <img alt="Brand" width="80" height="20" src="/static/picture/brand_anbaibai.png">
                   </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="/article/list/1">电影笔记</a></li>
-                <li><a href="/article/list/2">读书笔记</a></li>
-                <li><a href="/article/list/3">设计笔记</a></li>
-                <li><a href="/article/list/4">技术笔记</a></li>
-                <li><a href="/article/list/5">行走笔记</a></li>
+                <li><a href="/article/list/1">电影</a></li>
+                <li><a href="/article/list/2">读书</a></li>
+                <li><a href="/article/list/3">设计</a></li>
+                <li><a href="/article/list/4">技术</a></li>
+                <li><a href="/article/list/5">行走</a></li>
               </ul>
-              <form class="navbar-form navbar-left">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
+              <!--<form class="navbar-form navbar-left">-->
+                <!--<div class="form-group">-->
+                  <!--<input type="text" class="form-control" placeholder="Search">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+              <!--</form>-->
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">联系我们</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <div class="jumbotron">
-                      <center><h1>anbaibai</h1></center>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {% block content %}
-                {% endblock %}
-            </div>
-        </div>
+
+        {% block content %}
+        {% endblock %}
     </body>
 </html>
