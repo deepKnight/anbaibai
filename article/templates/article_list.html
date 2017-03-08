@@ -1,14 +1,16 @@
-{% extends "base.html" %}
+{% extends "article_base.html" %}
 {% block content %}
+
+<div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-12">
-            <div class="jumbotron">
-              <center><h1>list图片</h1></center>
-              <p>这是一段介绍文字</p>
+            <div class="page-header">
+                <br>
+              <center><h>{{b.desc}}</h></center>
+              <p></p>
             </div>
         </div>
     </div>
-<div class="container">
   <div class="row">
     {% for article in articles %}
       <div class="col-sm-6 col-md-4">
@@ -24,5 +26,6 @@
       </div>
     {% endfor %}
     </div>
-</div>
+  </div>
+  
 {% endblock %}

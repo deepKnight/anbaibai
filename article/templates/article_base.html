@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="/static/css/index.css" rel="stylesheet">
+    <link href="/static/css/article.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,8 +41,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#">
-                    <i class="fa fa-play-circle"></i> <span class="light">anbaibai</span> anbaibai
+                <a class="navbar-brand page-scroll" href="/">
+                    <i class="fa fa-play-circle"></i> <span class="light">anbaibai</span>
                 </a>
             </div>
 
@@ -59,10 +59,10 @@
                     <li><a href="/article/list/4">技术</a></li>
                     <li><a href="/article/list/5">随想</a></li>
                     <li>
-                        <a class="page-scroll" href="#about">关于俺们</a>
+                        <a class="page-scroll" href="/#about">关于俺们</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">勾搭俺们</a>
+                        <a class="page-scroll" href="/#contact">勾搭俺们</a>
                     </li>
                 </ul>
             </div>
@@ -71,61 +71,20 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"> </h1>
-                        <p class="intro-text">
-                            <br> </p>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="page-header">
+            <br>
         </div>
-    </header>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>写给你们的</h2>
-                <p>我们想，拥有最漫长的青春，看最特别的景致，留最温柔的纪念，写最深情的文字</p>
-                <p>在安和白白一起成长的岁月里，在文字和影像里，一次又一次地重新相遇，想热烈地倾诉，我们依然有所爱，依然爱着和被爱着</p>
-                <p>这里是安白白，这里是安和白白，早上好</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>联系我们</h2>
-                <p>如果你想进一步了解我们，欢迎你来勾搭！</p>
-                <p><a href="mailto:an.baibai@foxmail.com">an.baibai@foxmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="http://music.163.com/#/user/home?id=71213725" class="btn btn-default btn-lg"><i class="fa fa-hand-peace-o"></i> <span class="network-name">网易云</span></a>
-                    </li>
-                    <li>
-                        <a href="http://weibo.com/5382907595/profile?topnav=1&wvr=6" class="btn btn-default btn-lg"><i class="fa fa-hand-peace-o"></i> <span class="network-name">微 博</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        {% block content %}
+        {% endblock %}
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>Copyright &copy; anbaibai.com 2017</p>
         </div>
     </footer>
 
